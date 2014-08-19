@@ -10,8 +10,8 @@ information to users of the `Auckland Physiome Repository
 in obtaining and running models from the respository, and those who wish
 to add models to the repository.
 
-If you wish to deploy an instance of the repository software, PMR2,
-please see the `buildout repository`_ on GitHub.
+If you wish to deploy an instance of the repository software,
+:term:`PMR2`, please see the `buildout repository`_ on GitHub.
 
 .. toctree::
    :maxdepth: 1
@@ -34,8 +34,9 @@ please see the `buildout repository`_ on GitHub.
 
 .. todo::
 
-   * Update all PMR documentation to reflect workspace ID changes and user workspace changes, if they go ahead.
-   * Get embedded workspaces doc written.
-   * Get some best practice docs written.
+   - Update all documentation to reflect workspace ID changes and user
+     workspace changes, if they go ahead.
+   - Get embedded workspaces doc written.
+   - Get some best practice docs written.
 
 .. _buildout repository: https://github.com/PMR2/pmr2.buildout
