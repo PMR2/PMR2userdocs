@@ -108,10 +108,11 @@ in the repository are named by the first author and publication date of
 the paper, so a good search query might be something like `goldbeter
 1991`. A list of the results of your search will probably contain both
 workspaces and exposures - you will need to click on the workspace of
-the model you wish to work on. Workspaces can be identified because
-their links are pale blue and have no details line following the
-clickable link. In the following screenshot, the first two results are
-workspaces, and the remainder are exposures.
+the model you wish to work on. Workspaces can be identified by where
+they are located, as they will be located inside **Workspaces**.
+In the following screenshot, the first two results are workspaces, and
+the remainder are exposures.  Note that red links are exposures that are
+marked as expired.
 
 .. figure:: /images/tut1-searchresults.png
    :align: center
@@ -385,12 +386,13 @@ these steps:
 
 .. figure:: /images/synchronize-form.png
    :align: center
-   :width: 100%
 
 4. Fill in the URI of your workspace on the source instance (*e.g.,*
    `<http://models.physiomeproject.org/w/andre/cortassa-ECME-2006>`_)
 
 #. Click the :guilabel:`Synchronize` button.
+
+.. _exposurewizardimportexport:
 
 In a similar manner, you are able to copy :term:`exposures` you might
 have made on the teaching instance over to the main repository, or from
@@ -405,7 +407,6 @@ another.
 
 .. figure:: /images/exposure-wizard-highlight-export.png
    :align: center
-   :width: 100%
 
 3. In the destination repository, navigate to the desired revision of
    the (published) workspace and choose the :guilabel:`Create exposure`
@@ -417,7 +418,6 @@ another.
 
 .. figure:: /images/exposure-wizard-import-from-uri.png
    :align: center
-   :width: 100%
 
 5. Copy and paste the URI from the source exposure wizard, highlighted
    above, into the :guilabel:`Exposure Export URI` field in the exposure

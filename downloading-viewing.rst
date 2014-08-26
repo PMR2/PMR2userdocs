@@ -44,13 +44,13 @@ narrow it down by choosing more or different keywords (*eg.* ``goldbeter
 1991`` instead of just ``goldbeter``), or you can click the *Advanced
 Search* link just under the search box on the results page. This will
 take you to a search page where you can select specific item types
-(*eg.* exposures or workspaces), statuses, and other specifics.
+(*eg.* exposures or workspaces).
 
 .. figure:: /images/tut1-advancedsearch.png
    :align: center
 
-   In this search I have chosen to only have published exposures in my
-   results.
+   In this search only exposure related items are to be shown in
+   the results.
 
 Once you have found the model you are interested in, there are several
 ways you can view or download it.
@@ -89,7 +89,7 @@ panel at the right hand side.
 - *Documentation* - displays the model documentation, already visible in
   the main area of the exposure page.
 - *Model Metadata* - displays information such as the citation
-  information, model authorship details, and PMR keywords.
+  information, model authorship details, and keywords.
 - *Model Curation* - displays the curation stars for the model, also
   visible at the top right of the page. Future additions to the curation
   system mean that there will be additional information to be displayed
@@ -121,28 +121,33 @@ OpenCell link looks something like this:
 Downloading models via Mercurial
 ================================
 
-All data in PMR are stored in :term:`workspaces` and each
-:term:`workspace` is a :term:`Mercurial` repository. The most
-comprehensive method of downloading content from PMR is to clone the
-workspace containing the desired data. In this manner you will have a
-local copy of the entire history of that data, including all provenance
-data, and the ability to step back through the history of the workspace
-to a state that may not be available via the download links in the
-exposure pages discussed above. If you would like to modify the contents
-of workspace, making use of Mercurial will ensure accurate provenance
-records are maintained as well as all the other benefits of using a
-version control system.
+All data in the Auckland Physiome Repository are stored in
+:term:`workspaces` and each :term:`workspace` is a :term:`Mercurial`
+repository. The most comprehensive method of downloading content from
+Auckland Physiome Repository is to clone the workspace containing the
+desired data. In this manner you will have a local copy of the entire
+history of that data, including all provenance data, and the ability to
+step back through the history of the workspace to a state that may not
+be available via the download links in the exposure pages discussed
+above. If you would like to modify the contents of workspace, making use
+of Mercurial will ensure accurate provenance records are maintained as
+well as all the other benefits of using a version control system.
 
 As software tools like `OpenCOR`_ and `MAP Client`_ evolve, they will be
 able to hide a lot of the Mercurial details and present the user with a
 user interface suitable for their specific application areas. Directly
 using Mercurial is, however, currently the most powerful way to leverage
-the full capabilities of PMR. Instructions for working with Mercurial
-can be found in the :ref:`CellML repository tutorial
-<cellmlrepositorytutorial-hg>`.
+the full capabilities of Auckland Physiome Repository.
+
+If you are using the command line Mercurial client, you can easily clone
+the underlying repository for an exposure simply by selecting the text
+box inside the **Collaboration** portlet and paste that command into a
+terminal, or right click on the name of the workspace under the
+**Source** portlet and copy that URL and then paste that into your
+Mercurial client.
+
+Detailed instructions for working with Mercurial can be found in the
+:ref:`CellML repository tutorial <cellmlrepositorytutorial-hg>`.
 
 .. _OpenCOR: http://abibook2.readthedocs.org/en/latest/OpenCOR/
 .. _MAP Client: http://abibook2.readthedocs.org/en/latest/MAP/
-
-.. todo::
-   Need to check this section on obtaining models via mercurial.

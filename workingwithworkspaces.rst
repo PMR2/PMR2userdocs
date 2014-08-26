@@ -42,14 +42,12 @@ shown below:
 
 .. figure:: /images/my-workspaces.png
    :align: center
-   :width: 80%
 
 The first paragraph includes a link to your dashboard to add a new
 workspace, shown below:
 
 .. figure:: /images/add-workspace-dashboard.png
    :align: center
-   :width: 80%
 
 Currently :term:`Mercurial` is the only avialable option for the storage
 method for a new workspace, but this may be expanded to include other
@@ -63,7 +61,6 @@ which will initially be empty, as shown below:
 
 .. figure:: /images/new-workspace.png
    :align: center
-   :width: 80%
 
 In the figure above, the URI of the newly created workspace has been
 highlighted. This is the URI that will be used when operating on the
@@ -74,7 +71,7 @@ workspace using Mercurial.
 Working with collaborators
 ==========================
 
-:term:`PMR2` makes use of :term:`Mercurial` to manage individual
+The repository makes use of :term:`Mercurial` to manage individual
 workspaces.  Mercurial is a Distributed Version Control System (DVCS),
 and as such encourages collaborative development of your model, dataset,
 results, *etc*. Using Mercurial, each member of the development team is
@@ -98,16 +95,27 @@ given workspace, as shown below.
 
 .. figure:: /images/sharingTab.png
    :align: center
-   :width: 80%
 
-By default, you will initially see the list of repository administrators
-and curators will have some permissions to access your workspace. Most
-of these can be turned off if you choose, but is generally not
-recommended as they will need access in most cases if you need help with
-your workspace. Using the :guilabel:`Sharing` tab you are able to search
-for other members, such as the names of people in your development
-team. These members would then appear in the list of members and you are
-able to set their access as required.
+By default, you will initially see that all logged-in user has the
+**Can add** permission.  That is the inherited permission from the
+global workspace container, and does not imply that they can view your
+work as that is determined by the **Can view** permission.  This also
+does not mean that they can add data to your workspace.  This permission
+setting is applied to the default workspace container so that you and
+all other users of the system have the ability to create new workspaces.
+
+:term:`PMR2` has the option to provide individual containers per user
+for their private workspaces, but this option is now disabled in the
+Auckland Physiome Repository.
+
+You can disable the inherited higher level permissions from your
+workspace by unchecking the **Inherit permissions from higher levels**
+checkbox, if you wish, but the administrators of the repository can
+access your workspace regardless if you wish for them to aid you with
+your workspace.  Using the :guilabel:`Sharing` tab you are able to
+search for other members, such as the names of people in your
+development team.  These members would then appear in the list of
+members and you are able to set their access as required.
 
 Using the :guilabel:`Sharing` controls there are currently four possible
 permissions that can be controlled. The **Can add** and **Can edit**

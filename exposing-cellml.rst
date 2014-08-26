@@ -60,7 +60,10 @@ or collaboration, or see the :ref:`relevant section of the tutorial
 
 At this point you are recommended to submit the workspace for
 publication, using the *state:* menu at the top right of the workspace
-view page.
+view page.  This is especially important if you decide to make an
+exposure public, as having a private workspace for a public exposure
+will impede access of linked data, such as images for the introduction
+to that particular exposure.
 
 .. figure:: /images/submitworkspaceforpublication.png
    :align: center
@@ -136,6 +139,14 @@ the wizard, where you can select various options for the model you have
 chosen to expose, and will allow you to add further model files to the
 exposure if desired.
 
+.. figure:: /images/wizard2.png
+   :align: center
+
+   Note that if your workspace is not publicly accessible, there will
+   be an informative note for this which you can safely ignore as there
+   are no process within the generation of the exposure that must
+   require a publicly accessible workspace.
+
 The wizard shows a *subgroup* for each CellML file to be included in the
 exposure.  For each CellML file, select the following options:
 
@@ -149,21 +160,24 @@ exposure.  For each CellML file, select the following options:
 - License and Citation
    - File/Citation format - select CellML RDF metadata to automatically
      generate a citation page using the model RDF
-   - License - select Creative Commons Attributions 3.0 Unported
+   - License - select Creative Commons Attributions 3.0 Unported, in the
+     cases where the above option is unsuitable.
 - Source Viewer
    - Language Type - select xml
 - OpenCell Session Link
    - Session File - select the session.xml if it has been created
 
-.. figure:: /images/wizard2.png
+.. figure:: /images/wizard3.png
    :align: center
 
    **Selecting options for the model file subgroup**
 
-After selecting the subgroup options, you need to click the *Update*
-button to set the chosen options for the exposure builder. If you do not
-update the subgroup, the options you selected will be replaced by the
-default options when you click *Build*.
+After selecting the subgroup options, you need to select the *Update*
+button to apply the chosen options for the exposure builder, as this is
+an independent subform to the main form.  The options you selected will
+be ignored if this *Update* button is not selected, and the options will
+be replaced by the default options when you click *Build* before this
+was done.
 
 For exposures where you wish to expose multiple models, click on the
 *Add file* button at this stage to create another subgroup. You can then
@@ -175,9 +189,16 @@ After setting all the options for the models you wish to expose, click
 on the *Build* button. The repository software will then create the
 exposure pages and display the main page of the exposure.
 
+.. _submitting_exposure:
+
+Making your work publicly accessible
+------------------------------------
+
 In order to make the exposure visible and searchable, you will need to
-publish it. You can choose to submit your exposure for review, or if you
-have sufficient privileges you can publish it directly.
+publish it.  You can choose to submit your exposure for review, so that
+the repository administrators or curators will know to publish it for
+you.  Naturally, if you have sufficient privileges you can publish it
+directly.
 
 .. figure:: /images/exposurepublish.png
    :align: center
@@ -204,8 +225,8 @@ stored in the workspace and linked to from the HTML.
 - `Aslanidi et al. cardiac models encoded in C
   <http://models.cellml.org/e/ca>`_
 
-Making an exposure using "roll-over"
-====================================
+Making an exposure using "rollover"
+===================================
 
 As explained earlier, an :term:`exposure` aims to bring a particular
 revision to the attention of users who are browsing and searching the
@@ -221,9 +242,13 @@ as well, but this is not the usual usage.
 
 .. note::
    A forked workspace contains all of the revision history of the
-   workspace it was created from, but does not contain any of the
-   exposures that existed for the original workspace. You will always
-   need to create an exposure from scratch in newly forked repositories.
+   workspace it was created from, but has no linkages to any of the
+   exposures that existed for the original workspace.  However, you may
+   navigate to the history of the original workspace and select any
+   exposure, then select the wizard tab to the link to its exported
+   structure, from which the exposure can be migrated over.  Please
+   see :ref:`the section on migrating exposure
+   <exposurewizardimportexport>` for more details.
 
 From the view page of your workspace, select "exposure rollover".
 
@@ -246,11 +271,9 @@ The new exposure will be created and displayed. When a new exposure is
 created, it is initially put in the *private* state. This means that
 only the user who created it or other users with appropriate permissions
 can see it, and it will not appear in search results or model listings.
-In order to publish the exposure, you will need to select *submit for
-publication* from the *state* menu.
-
-.. figure:: /images/tut1-submitforpublication.png
-   :align: center
+In order to publish the exposure, you will need to select :ref:`submit
+for publication <submitting_exposure>` from the
+*state* menu.
 
 The state will change to "pending review". The administrator or curators
 of the repository will then review and publish the exposure, as well as
