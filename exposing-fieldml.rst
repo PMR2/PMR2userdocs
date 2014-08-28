@@ -20,12 +20,12 @@ browser through the use of the `Zinc plugin`.
 The example screenshots below show the main documentation page view and
 the 3D visualization provided by the Zinc viewer.
 
-.. figure:: /images/fieldmlexposureexample1.png
+.. figure:: images/fieldmlexposureexample1.png
    :align: center
 
    The main documentation view of a FieldML exposure
 
-.. figure:: /images/fieldmlexposureexample2.png
+.. figure:: images/fieldmlexposureexample2.png
    :align: center
 
    The main Zinc viewer view of the same FieldML exposure

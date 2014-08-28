@@ -31,7 +31,7 @@ of the page. You can use keywords such as ``cardiac`` or ``insulin``,
 author names, or any other terms relevant to the models you want to
 find.
 
-.. figure:: /images/downloading-searches1.png
+.. figure:: images/downloading-searches1.png
    :align: center
 
    The index page of the model repository provides two methods for
@@ -46,7 +46,7 @@ Search* link just under the search box on the results page. This will
 take you to a search page where you can select specific item types
 (*eg.* exposures or workspaces).
 
-.. figure:: /images/tut1-advancedsearch.png
+.. figure:: images/tut1-advancedsearch.png
    :align: center
 
    In this search only exposure related items are to be shown in
@@ -69,7 +69,7 @@ navigation pane that allows the user to select between available
 versions of the model. Many models only have one version, but in this
 case there are two variants.
 
-.. figure:: /images/exposureeg1.png
+.. figure:: images/exposureeg1.png
    :align: center
 
    An example of a CellML exposure page.
@@ -78,7 +78,7 @@ If you click on one of the model variant navigation links, you will be
 taken to a sub-page of the exposure which will allow you to view the
 actual CellML model in a number of ways.
 
-.. figure:: /images/exposureeg2.png
+.. figure:: images/exposureeg2.png
    :align: center
 
    An example of a CellML exposure sub-page.
@@ -111,7 +111,7 @@ panel at the right hand side.
 The OpenCell session that is loaded when clicking on the Simulate using
 OpenCell link looks something like this:
 
-.. figure:: /images/sessionexample1.png
+.. figure:: images/sessionexample1.png
    :align: center
 
    An OpenCell session. Objects such as membrane channels in the diagram

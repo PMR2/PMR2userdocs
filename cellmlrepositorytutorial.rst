@@ -78,7 +78,7 @@ download models. The first page in the repository consists of basic
 navigation, a link to the main model listing, a search box at the top
 right, and a list of model category links as shown below.
 
-.. figure:: /images/tut1-mainscreen.png
+.. figure:: images/tut1-mainscreen.png
    :align: center
 
    The front page of the Auckland Physiome Repository.
@@ -91,7 +91,7 @@ take you to a page displaying a list of exposed models in that category.
 Click on electrophysiology for example, and a list of over 100 exposed
 models in that category will be displayed, as shown here.
 
-.. figure:: /images/tut1-modellistings.png
+.. figure:: images/tut1-modellistings.png
    :align: center
 
    A list of models in the electrophysiology category.
@@ -114,7 +114,7 @@ In the following screenshot, the first two results are workspaces, and
 the remainder are exposures.  Note that red links are exposures that are
 marked as expired.
 
-.. figure:: /images/tut1-searchresults.png
+.. figure:: images/tut1-searchresults.png
    :align: center
 
    A search results listing on the Auckland Physiome Repository.
@@ -231,7 +231,7 @@ at:
 
 Now click on the :guilabel:`fork` option in the toolbar, as shown below.
 
-.. figure:: /images/fork1.png
+.. figure:: images/fork1.png
    :align: center
 
 You will be asked to confirm the *fork* action by clicking the
@@ -245,7 +245,7 @@ In order to make changes to your workspace, you have to :term:`clone` it
 to your own computer. In order to do this, copy the URI for mercurial
 clone/pull/push as shown below:
 
-.. figure:: /images/tut1-cloneurl.png
+.. figure:: images/tut1-cloneurl.png
    :align: center
 
    Copying the URI for cloning your workspace.
@@ -254,7 +254,7 @@ In Windows explorer, find the folder where you want to create the clone
 of the workspace. Then right click to bring up the context menu, and
 select :menuselection:`TortoiseHG --> Clone` as shown below:
 
-.. figure:: /images/tut1-tortoisehgclone.png
+.. figure:: images/tut1-tortoisehgclone.png
    :align: center
 
 Paste the copied URL into the *Source:* area and then click the *Clone*
@@ -282,7 +282,7 @@ an example, open the model file in your text editor and remove the
 paragraph which describes validation errors from the documentation
 section, as shown below:
 
-.. figure:: /images/tut1-editcellmlfile.png
+.. figure:: images/tut1-editcellmlfile.png
    :align: center
 
 Save the file. If you are using TortoiseHg, you will notice that the
@@ -304,7 +304,7 @@ Click on the Commit button at the far left of the toolbar. The icon
 overlay for the file will now change to a green tick, indicating that
 changes to the file have been committed.
 
-.. figure:: /images/tut1-commitchanges.png
+.. figure:: images/tut1-commitchanges.png
    :align: center
 
 **Command line equivalent** ::
@@ -323,7 +323,7 @@ will bring up a window from which you can manage changes to the
 workspace in the repository. Click on the Push button in the toolbar,
 and enter your username and password when prompted.
 
-.. figure:: /images/tut1-pushchanges.png
+.. figure:: images/tut1-pushchanges.png
    :align: center
 
 **Command line equivalent** ::
@@ -334,7 +334,7 @@ Now navigate to your workspace and click on the history toolbar button.
 This will show entries under the Most recent changes, complete with the
 commit messages you entered for each commit, as shown below:
 
-.. figure:: /images/tut1-newhistoryentry.png
+.. figure:: images/tut1-newhistoryentry.png
    :align: center
 
 Create an exposure
@@ -384,7 +384,7 @@ these steps:
    :guilabel:`synchronize` action from the workspace toolbar, as shown
    below.
 
-.. figure:: /images/synchronize-form.png
+.. figure:: images/synchronize-form.png
    :align: center
 
 4. Fill in the URI of your workspace on the source instance (*e.g.,*
@@ -405,7 +405,7 @@ another.
 
 #. Choose the :guilabel:`wizard` item from the toolbar as shown below.
 
-.. figure:: /images/exposure-wizard-highlight-export.png
+.. figure:: images/exposure-wizard-highlight-export.png
    :align: center
 
 3. In the destination repository, navigate to the desired revision of
@@ -416,7 +416,7 @@ another.
 #. Rather than building a new exposure, choose the :guilabel:`Exposure
    Import via URI` tab in the exposure creation wizard, as shown below.
 
-.. figure:: /images/exposure-wizard-import-from-uri.png
+.. figure:: images/exposure-wizard-import-from-uri.png
    :align: center
 
 5. Copy and paste the URI from the source exposure wizard, highlighted

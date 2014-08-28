@@ -18,7 +18,7 @@ The example below shows the main exposure page for the Bondarenko *et
 al.* 2004 workspace. This workspace contains two models, which can be
 viewed via the *Navigation* pane on the right hand side of the page.
 
-.. figure:: /images/exposureeg1.png
+.. figure:: images/exposureeg1.png
    :align: center
 
    **Example of an exposure page**
@@ -28,7 +28,7 @@ the page for that particular model. Exposures most often present a
 single model, although they can present any number of models, each with
 its own documentation and views.
 
-.. figure:: /images/exposureeg2.png
+.. figure:: images/exposureeg2.png
    :align: center
 
    **Example of a model exposure page**
@@ -65,7 +65,7 @@ exposure public, as having a private workspace for a public exposure
 will impede access of linked data, such as images for the introduction
 to that particular exposure.
 
-.. figure:: /images/submitworkspaceforpublication.png
+.. figure:: images/submitworkspaceforpublication.png
    :align: center
 
    **The state menu is used to submit objects such as workspaces for
@@ -85,7 +85,7 @@ repository and find the workspace of interest in the listing displayed.
 After navigating to your workspace, click on the *history* button in the
 menu bar.
 
-.. figure:: /images/workspacehistory.png
+.. figure:: images/workspacehistory.png
    :align: center
 
    **The revision history of a fork of the Beeler Reuter 1977
@@ -99,7 +99,7 @@ After selecting the revision you wish to expose, click on the *workspace
 actions* menu at the far right end of the menu bar and select *create
 exposure*.
 
-.. figure:: /images/revisioncreateexposure.png
+.. figure:: images/revisioncreateexposure.png
    :align: center
 
    **Selecting the manifest of the revision to expose**
@@ -121,7 +121,7 @@ the *Exposure main view* section. For the *New Exposure File Entry*
 section, choose the CellML file you wish to expose, and select CellML as
 the file type.
 
-.. figure:: /images/wizard1.png
+.. figure:: images/wizard1.png
    :align: center
 
    **Selecting the main documentation and the first CellML model file**
@@ -139,7 +139,7 @@ the wizard, where you can select various options for the model you have
 chosen to expose, and will allow you to add further model files to the
 exposure if desired.
 
-.. figure:: /images/wizard2.png
+.. figure:: images/wizard2.png
    :align: center
 
    Note that if your workspace is not publicly accessible, there will
@@ -167,7 +167,7 @@ exposure.  For each CellML file, select the following options:
 - OpenCell Session Link
    - Session File - select the session.xml if it has been created
 
-.. figure:: /images/wizard3.png
+.. figure:: images/wizard3.png
    :align: center
 
    **Selecting options for the model file subgroup**
@@ -200,7 +200,7 @@ the repository administrators or curators will know to publish it for
 you.  Naturally, if you have sufficient privileges you can publish it
 directly.
 
-.. figure:: /images/exposurepublish.png
+.. figure:: images/exposurepublish.png
    :align: center
 
    **Publish your exposure to make it visible to others.**
@@ -252,7 +252,7 @@ as well, but this is not the usual usage.
 
 From the view page of your workspace, select "exposure rollover".
 
-.. figure:: /images/tut1-rolloverbutton.png
+.. figure:: images/tut1-rolloverbutton.png
    :align: center
 
 The exposure rollover button takes you to a list of revisions of the
@@ -264,7 +264,7 @@ you wish to base your new one on. The most common use case is to select
 the latest exposure and the latest revision, and then click the
 *Migrate* button at the bottom of the list.
 
-.. figure:: /images/tut1-rolloverlist.png
+.. figure:: images/tut1-rolloverlist.png
    :align: center
 
 The new exposure will be created and displayed. When a new exposure is

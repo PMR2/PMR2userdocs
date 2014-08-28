@@ -40,13 +40,13 @@ Once a user is logged into Auckland Physiome Repository, they will be
 presented with a :guilabel:`My Workspaces` link in the top toolbar, as
 shown below:
 
-.. figure:: /images/my-workspaces.png
+.. figure:: images/my-workspaces.png
    :align: center
 
 The first paragraph includes a link to your dashboard to add a new
 workspace, shown below:
 
-.. figure:: /images/add-workspace-dashboard.png
+.. figure:: images/add-workspace-dashboard.png
    :align: center
 
 Currently :term:`Mercurial` is the only avialable option for the storage
@@ -59,7 +59,7 @@ if you don't get it perfect the first time.
 Clicking the :guilabel:`Add` button with then create the workspace,
 which will initially be empty, as shown below:
 
-.. figure:: /images/new-workspace.png
+.. figure:: images/new-workspace.png
    :align: center
 
 In the figure above, the URI of the newly created workspace has been
@@ -93,7 +93,7 @@ ability of its members and anonymous users to interact with workspaces.
 The access control is managed via the :guilabel:`Sharing` tab for a
 given workspace, as shown below.
 
-.. figure:: /images/sharingTab.png
+.. figure:: images/sharingTab.png
    :align: center
 
 By default, you will initially see that all logged-in user has the
