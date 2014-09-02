@@ -238,6 +238,8 @@ You will be asked to confirm the *fork* action by clicking the
 :guilabel:`Fork` button. You will then be shown the page for your forked
 workspace.
 
+.. _tut1cloningworkspace:
+
 Cloning your forked workspace
 -----------------------------
 
