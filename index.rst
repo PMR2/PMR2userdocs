@@ -20,6 +20,7 @@ If you wish to deploy an instance of the repository software,
    downloading-viewing
    workingwithworkspaces
    cellmlrepositorytutorial
+   semantic-metadata
    exposing-cellml
    exposing-fieldml
    embeddedworkspaces
