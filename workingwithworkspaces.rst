@@ -136,6 +136,15 @@ When working in a collaborative team you would generally enable the
 only enable the **Can add** and **Can edit** permissions for the team
 members responsible for the workspace presentation in the website.
 
+Alternatively, if you wish to make your work available for searching by
+any users, including the ones who do not have an account with the
+repository, you may do so by changing the workflow state from "private"
+to "submit for publication".  This will put your workspace into the
+reviewer queue and they will turn it into the "published" state.
+
+.. figure:: images/workspacesubmit.png
+   :align: center
+
 Uploading files to your workspace
 =================================
 
@@ -148,6 +157,7 @@ the following steps:
 #. :term:`Push` the workspace back to the repository.
 
 An example demonstrating these steps can be found in in this tutorial
-step: `Populate with content`_
+step: `Populate with content`_, or continue on to the :ref:`next section of
+this guide <tut1cloningworkspace>`.
 
 .. _Populate with content: http://abibook2.readthedocs.org/en/latest/tutorials/embc13/scenario1/opencor/#embc13-opencor-addingcontent
