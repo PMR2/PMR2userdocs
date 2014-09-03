@@ -39,6 +39,7 @@ Use OpenCOR to open your local clone of your model file, specifically
 the ``hodgkin_huxley_1952.cellml`` file.
 
 .. figure:: images/metadata-opencor-start.png
+   :align: center
 
 Select the ``sodium_channel`` component under the list of components,
 then click on the helpful link to remove the existing metadata for that
@@ -55,6 +56,7 @@ complex" (GO:0034706) to denote that the component is a version of this
 term.
 
 .. figure:: images/metadata-opencor-annotating.png
+   :align: center
 
 Now select the ``potassium_channel`` component, and repeat the processs
 to annotate this with the "potassium channel complex" term.
@@ -70,6 +72,7 @@ Now that your changes have been pused back, go back to the page for your
 fork of the model and select the "RDF Indexing" tab.
 
 .. figure:: images/metadata-pmr2-rdfindexing.png
+   :align: center
 
 Scroll down the left-handed list until you see the
 ``hodgkin_huxley_1952.cellml`` file, select it, then push the button
@@ -87,3 +90,4 @@ the "Search" button.  The search result will now list the workspace and
 the file that contain this annotation.
 
 .. figure:: images/metadata-pmr2-search.png
+   :align: center
