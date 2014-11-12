@@ -68,6 +68,11 @@ preparation section if you need a primer.
 Getting your workspace indexed by the repository
 ================================================
 
+In order to have your annotations pulled into the semantic engine, you
+need to inform the repository which resources in your workspace should
+be indexed. Once you have done this, all future versions of the indexed
+resources will be used to update the semantic engine.
+
 Now that your changes have been pushed back, go back to the page for your
 fork of the model and select the "RDF Indexing" tab.
 
