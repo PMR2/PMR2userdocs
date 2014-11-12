@@ -68,7 +68,7 @@ preparation section if you need a primer.
 Getting your workspace indexed by the repository
 ================================================
 
-Now that your changes have been pused back, go back to the page for your
+Now that your changes have been pushed back, go back to the page for your
 fork of the model and select the "RDF Indexing" tab.
 
 .. figure:: images/metadata-pmr2-rdfindexing.png
