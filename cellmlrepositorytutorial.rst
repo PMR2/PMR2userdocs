@@ -372,10 +372,10 @@ the full history and provenance record, from one location to another.
 PMR2 also provides a feature that exports exposures so that they can
 then be imported into another PMR2 instance.
 
-For example: if you would like to move your work in your workspace on
-the teaching instance into a *new* workspace on the Auckland Physiome
-Repository (or from one PMR2 instance to another), you should follow
-these steps:
+For example: if you would like to move your work from any publicly accessible
+Mercurial repository (such as a published workspace on the teaching repository
+or a public repository on BitBucket.org) *new* workspace on the Auckland Physiome
+Repository, you should follow these steps:
 
 1. Ensure that you have pushed all your commits to the source instance;
 
@@ -390,9 +390,15 @@ these steps:
    :align: center
 
 4. Fill in the URI of your workspace on the source instance (*e.g.,*
-   `<http://models.physiomeproject.org/w/andre/cortassa-ECME-2006>`_)
+   `<http://teaaching.physiomeproject.org/w/andre/cortassa-ECME-2006>`_)
 
 #. Click the :guilabel:`Synchronize` button.
+
+If you would like to move your work from a private workspace on the teaching
+instance (or any non-publicly accessible Mercurial repository), you will need
+to use your Mercurial client to directly :term:`push` your repository up to
+the newly created workspace. This is because you will need to make use of
+the relevant authentication to access the private workspace or repository.
 
 .. _exposurewizardimportexport:
 
