@@ -9,8 +9,8 @@ Embedded workspaces and their uses
 .. todo::
    This section needs more work.
 
-:term:`Workspaces` in PMR are currently implemented as :term:`Mercurial`
-repositories. One Mercurial feature that is quite useful in the context
+:term:`Workspaces` in PMR are currently implemented as :term:`Git`
+repositories. One Git feature that is quite useful in the context
 of the Auckland Physiome Repository is `nested repositories
 <http://mercurial.selenic.com/wiki/Subrepository>`_. Using the more
 general :term:`PMR2` concepts, we term such nesting as :term:`embedded
@@ -46,4 +46,4 @@ Best practice
 
 See also the `recommendations
 <http://mercurial.selenic.com/wiki/Subrepository#Recommendations>`_ from
-the Mercurial project.
+the Git project.

@@ -5,6 +5,7 @@ Glossary
 ========
 
 .. _Mercurial basics: http://hgbook.red-bean.com/read/a-tour-of-mercurial-the-basics.html
+.. _Git Beginner's Guide: http://backlogtool.com/git-guide/en/
 
 .. glossary::
    :sorted:
@@ -26,21 +27,24 @@ Glossary
       A copy of the workspace which includes all the original version history, but is owned by the user who created the fork.
 
    Synchronize
-      Used to pull the contents or changes from other :term:`Mercurial` repositories into a workspace via a URI.
+      Used to pull the contents or changes from other :term:`Git` repositories into a workspace via a URI.
 
    Workspace
    Workspaces
-      A `Mercurial` repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Mercurial <http://mercurial.selenic.com/>`_.
+      A `Git` repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Git`_.
+
+   Git
+      `Git <http://git-scm.com/>`_ is a distributed version control system currently used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`. See a tour of the `Git Beginner's Guide`_ for some good introductory material.
 
    Mercurial
-      `Mercurial <http://mercurial.selenic.com/>`_ is a distributed version control system, used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`. See a tour of the `Mercurial basics`_ for some good introductory material.
+      `Mercurial <http://mercurial.selenic.com/>`_ is a distributed version control system previously used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`. See a tour of the `Mercurial basics`_ for some good introductory material.
 
    PMR2
       The software that powers the Auckland Physiome Repository.
 
    Push
    Pushing
-      The term used with distibuted version control systems for the action of pushing changes from one clone of the repository into another. With PMR, this usually implies pushing from a workspace clone on your local machine back to the workspace in the model repository, but could be into any other clone of the workspace. See a tour of the `Mercurial basics`_ for some good introductory material.
+      The term used with distibuted version control systems for the action of pushing changes from one clone of the repository into another. With PMR, this usually implies pushing from a workspace clone on your local machine back to the workspace in the model repository, but could be into any other clone of the workspace. See a tour of the `Git Beginner's Guide`_ for some good introductory material.
 
    Pull
    Pulling

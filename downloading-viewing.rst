@@ -17,7 +17,7 @@ results with the help of a model diagram.
 
 If you intend to use the model for further work, for example saving
 changes to the model or creating a new model based on an existing model
-or parts of an existing model, you should use :term:`Mercurial` to
+or parts of an existing model, you should use :term:`Git` to
 obtain the files. In this way you also obtain the complete revision
 history of the files, and can add to this history as you make your own
 changes.
@@ -118,11 +118,11 @@ OpenCell link looks something like this:
    can be clicked - this will toggle the graph traces displaying the
    values for those objects.
 
-Downloading models via Mercurial
-================================
+Downloading models via Git
+==========================
 
 All data in the Auckland Physiome Repository are stored in
-:term:`workspaces` and each :term:`workspace` is a :term:`Mercurial`
+:term:`workspaces` and each :term:`workspace` is a :term:`Git`
 repository. The most comprehensive method of downloading content from
 Auckland Physiome Repository is to clone the workspace containing the
 desired data. In this manner you will have a local copy of the entire
@@ -130,24 +130,24 @@ history of that data, including all provenance data, and the ability to
 step back through the history of the workspace to a state that may not
 be available via the download links in the exposure pages discussed
 above. If you would like to modify the contents of workspace, making use
-of Mercurial will ensure accurate provenance records are maintained as
-well as all the other benefits of using a version control system.
+of Git will ensure accurate provenance records are maintained as well as
+all the other benefits of using a version control system.
 
 As software tools like `OpenCOR`_ and `MAP Client`_ evolve, they will be
-able to hide a lot of the Mercurial details and present the user with a
-user interface suitable for their specific application areas. Directly
-using Mercurial is, however, currently the most powerful way to leverage
-the full capabilities of Auckland Physiome Repository.
+able to hide a lot of the Git details and present the user with a user
+interface suitable for their specific application areas. Directly using
+Git is, however, currently the most powerful way to leverage the full
+capabilities of Auckland Physiome Repository.
 
-If you are using the command line Mercurial client, you can easily clone
+If you are using the command line Git client, you can easily clone
 the underlying repository for an exposure simply by selecting the text
 box inside the **Collaboration** portlet and paste that command into a
 terminal, or right click on the name of the workspace under the
 **Source** portlet and copy that URL and then paste that into your
-Mercurial client.
+Git client.
 
-Detailed instructions for working with Mercurial can be found in the
-:ref:`CellML repository tutorial <cellmlrepositorytutorial-hg>`.
+Detailed instructions for working with Git can be found in the
+:ref:`CellML repository tutorial <cellmlrepositorytutorial-git>`.
 
 .. _OpenCOR: http://abibook2.readthedocs.org/en/latest/OpenCOR/
 .. _MAP Client: http://abibook2.readthedocs.org/en/latest/MAP/
