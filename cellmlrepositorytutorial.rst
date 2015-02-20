@@ -286,7 +286,7 @@ Committing changes
 ------------------
 
 If you are using TortoiseGit, bring up the shell menu for the altered
-file and select :menuselection:`TortoiseGit --> Git Commit`. A window will
+file and select :menuselection:`Git Commit -> "master"`. A window will
 appear showing details of the changes you are about to commit, and
 prompting for a commit message. Every time you commit changes, you
 should enter a useful commit message with information about what changes
@@ -297,7 +297,7 @@ Click on the Commit button at the far left of the toolbar. The icon
 overlay for the file will now change to a green tick, indicating that
 changes to the file have been committed.
 
-.. figure:: images/tut1-commitchanges.png
+.. figure:: images/tut1-gitcommitchanges.png
    :align: center
 
 **Command line equivalent** ::
@@ -311,12 +311,12 @@ Your cloned workspace on your local machine now has a small history of
 changes which you wish to *push* into the repository.
 
 Right click on your workspace folder in Windows explorer, and select
-:menuselection:`TortoiseGit --> Git Synchronize` from the shell menu. This
+:menuselection:`Git Sync...` from the shell menu. This
 will bring up a window from which you can manage changes to the
 workspace in the repository. Click on the Push button in the toolbar,
 and enter your username and password when prompted.
 
-.. figure:: images/tut1-pushchanges.png
+.. figure:: images/tut1-gitpushchanges.png
    :align: center
 
 **Command line equivalent** ::
