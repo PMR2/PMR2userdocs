@@ -31,8 +31,6 @@ This tutorial requires you to have:
 
 - A `Git client <http://git-scm.com/downloads>`_.  Optionally, a GUI
   client such as `TortoiseGit <http://code.google.com/p/tortoisegit/>`_.
-- The `OpenCell <http://www.cellml.org/tools/opencell>`_ CellML
-  modelling environment.
 - A text editor such as `Notepad++ <http://notepad-plus-plus.org/>`_ or
   `gedit <http://projects.gnome.org/gedit/>`_.
 
