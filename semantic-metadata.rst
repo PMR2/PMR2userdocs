@@ -81,7 +81,7 @@ Scroll down the left-handed list until you see the
 with the right arrow on it to add it onto the list of paths to be
 tracked, then select the "Apply Changes and Export To RDF Store" button.
 
-Go back to the main page, select the "Ontology based search engine" link
+Go back to the repository home page, select the "Ontology based search engine" link
 at the bottom, then enter the relevant search term.  As there are
 limited reasoning capabilities built into the current iteration of the
 search engine, you may enter a term one level up above the terms we
