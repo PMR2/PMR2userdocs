@@ -10,7 +10,7 @@ PMR2 release 8 and 9 brought in the support for semantic metadata, which
 allows users to add whatever metadata and annotations they might have
 stored into the repository into the underlying metadata semantic engine,
 which then allows them to be retrieved using search queries.  In this
-section, we will go over how to use OpenCOR to annotate a model, and how
+section, we will go over how to use `OpenCOR <http://opencor.ws>`_ to annotate a model, and how
 to add the metadata to the underlying metadata engine then query for the
 results.
 
@@ -28,9 +28,11 @@ do this, please see :ref:`this section of the tutorial
 
 .. _Hodgkin, Huxley, 1952 workspace: http://teaching.physiomeproject.org/workspace/hodgkin_huxley_1952
 
-Once you forked that workspace, you should now clone that workspace onto
+Once you have forked that workspace, you should clone the new workspace to
 your system.  If you need help on this, please refer to :ref:`this help
 on cloning a workspace <tut1cloningworkspace>`.
+
+You will also need to have `OpenCOR <http://opencor.ws/downloads/index.html>`_ installed.
 
 Using OpenCOR for model annotation
 ----------------------------------
