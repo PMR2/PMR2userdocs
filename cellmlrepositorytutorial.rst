@@ -300,7 +300,7 @@ changes to the file have been committed.
 
 **Command line equivalent** ::
 
-   git commit -m "Removed the paragraph about validation errors from the documentation"
+   git commit -a -m "Removed the paragraph about validation errors from the documentation"
 
 Pushing changes to the repository
 ---------------------------------
