@@ -44,6 +44,3 @@ Uses
 Best practice
 =============
 
-See also the `recommendations
-<http://mercurial.selenic.com/wiki/Subrepository#Recommendations>`_ from
-the Git project.
