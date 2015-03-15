@@ -23,7 +23,7 @@ Workspaces in the Auckland Physiome Repository are permanent once they
 are created. There is a `teaching instance`_ of the repository which may
 be used for *experimenting* with features of the software without
 worrying about creating permanent workspaces that might have errors in
-them.  Users accounts and data from the Auckland Physiome Repository
+them.  User's accounts and data from the Auckland Physiome Repository
 will be copied to the `teaching instance`_ periodically, overwriting all
 data there in the process, but users may register for an account just on
 the `teaching instance`_ if they prefer.  Such accounts will need to be
@@ -49,7 +49,7 @@ workspace, shown below:
 .. figure:: images/add-workspace-dashboard.png
    :align: center
 
-Currently :term:`Git` is the only avialable option for the storage
+Currently :term:`Git` is the only available option for the storage
 method for a new workspace, but this may be expanded to include other
 storage methods in future.  A workspace should be given a meaningful
 title and a brief description to help locate the workspace using the
@@ -134,7 +134,11 @@ possible to revert the workspace back to the correct state.
 When working in a collaborative team you would generally enable the
 **Can push** and **Can view** permissions for all team members and
 only enable the **Can add** and **Can edit** permissions for the team
-members responsible for the workspace presentation in the website.
+members responsible for the workspace presentation in the website. 
+Repository administrators are able to create *teams* of users to ease
+access control for groups of users, please 
+`contact <http://www.cellml.org/about/contact>`_ the repository admins if
+you would like a team created.
 
 Alternatively, if you wish to make your work available for searching by
 any users, including the ones who do not have an account with the
