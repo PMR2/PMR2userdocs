@@ -12,9 +12,7 @@ About this tutorial
 ===================
 
 The Auckland Physiome Repository provides extensive support for CellML
-model and related files.  Previously it was called the CellML Model
-Repository, this has since been merged completely along with the FieldML
-Model Repository into the unified repository.  The underlying software
+models and related files. The underlying software
 is :term:`PMR2`, which in turn relies on the distributed version control
 system :term:`Git`, which allows the repository to maintain a complete
 history of all changes made to every file it contains. This tutorial
@@ -61,8 +59,7 @@ explanations of some of these terms as they apply to the repository.
   your model.
 
 The Git DVCS has a range of terms that are useful to know, and
-definitions of these terms can be found in the Git Reference
-http://git-scm.com/docs.
+definitions of these terms can be found in the `Git Reference <http://git-scm.com/docs>`_.
 
 .. index::
    single: Auckland Physiome Repository web interface
@@ -71,7 +68,7 @@ Working with the repository web interface
 =========================================
 
 This part of the tutorial will teach you how to find models in the
-Auckland Physiome Repository `<https://models.physiomeproject.org>`_,
+`Auckland Physiome Repository <https://models.physiomeproject.org>`_,
 how to view a range of information about those models, and how to
 download models. The first page in the repository consists of basic
 navigation, a link to the main model listing, a search box at the top
@@ -166,7 +163,8 @@ replaced by your username and a Log out link.
 Git username configuration
 --------------------------
 
-.. important::
+.. warning::
+
    **Username setup for Git**
 
    Since you are about to make changes, your name and email address must
