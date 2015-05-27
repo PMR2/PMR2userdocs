@@ -11,11 +11,11 @@ Glossary
    :sorted:
 
    Clone
-      Clone is a Mercurial term that means to make a complete copy of a Mercurial repository. This is done in order to have a local copy of a repository to work in.
+      The term used with distributed version control systems (DVCS) to describe the process for making complete copy of another repository, usually hosted at a different site. This is done in order to have a local copy of a repository to work in.
 
    Embedded workspace
    Embedded workspaces
-      A Mercurial concept that allows workspaces to be nested within other workspaces.
+      Essentially workspace or workspaces that are nested inside another one through mechanisms offered by distributed version control systems.  In :term:`Git` it will be through the use of Git submodules, in :term:`Mercurial` it will be through the use of Mercurial subrepos.
 
    Exposure
    Exposures
@@ -27,11 +27,11 @@ Glossary
       A copy of the workspace which includes all the original version history, but is owned by the user who created the fork.
 
    Synchronize
-      Used to pull the contents or changes from other :term:`Git` repositories into a workspace via a URI.
+      Used to pull the contents or changes from other repositories into a workspace via a URI.  The remote repository have to be of the same DVCS protocol of the corresponding workspace..
 
    Workspace
    Workspaces
-      A `Git` repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Git`_.
+      A `Git` repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Git`_.  Previously this was `Mercurial`.
 
    Git
       `Git <http://git-scm.com/>`_ is a distributed version control system currently used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`. See a tour of the `Git Beginner's Guide`_ for some good introductory material.
