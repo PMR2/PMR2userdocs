@@ -161,3 +161,30 @@ step: `Populate with content`_, or continue on to the :ref:`next section of
 this guide <tut1cloningworkspace>`.
 
 .. _Populate with content: http://abibook2.readthedocs.org/en/latest/tutorials/embc13/scenario1/opencor/#embc13-opencor-addingcontent
+
+Troubleshoot
+============
+
+If during a ``git push`` something like this happened::
+
+    $ git push http://models.example.com/workspace/test
+    Counting objects: 101, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (101/101), done.
+    error: RPC failed; result=55, HTTP code = 0
+    fatal: The remote end hung up unexpectedly
+    Writing objects: 100% (101/101), 1.42 MiB | 0 bytes/s, done.
+    Total 101 (delta 59), reused 0 (delta 0)
+    fatal: The remote end hung up unexpectedly
+    Everything up-to-date
+
+This is caused by an insufficiently large ``http.postBuffer`` in your
+git configuration.  Either add this section to the ``.gitconfig`` file::
+
+    [http]
+        postBuffer = 524288000
+
+Or issue this command::
+
+    git config --global http.postBuffer 524288000
+
