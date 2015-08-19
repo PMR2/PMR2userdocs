@@ -33,11 +33,13 @@ standard is designed as a proper hypermedia type a browser that sends
 and interpret Collection+JSON can be used to navigate the repository
 much like how an end-user might navigate the repository with their web
 browser.  One such example is through the `Collection\+JSON Browser`_
-with the root endpoint of the repository.
+with the root endpoint of the repository (however, the example link uses
+the URL to the welcome page as the browser does not support redirection
+to that on its own).
 
 .. _Collection\+JSON: http://amundsen.com/media-types/collection/
 .. _Collection\+JSON Browser: http://collection-json-browser.herokuapp.com/
-  ?proxy&uri=http:%2F%2Fstaging.physiomeproject.org%2F
+  ?proxy&uri=http:%2F%2Fstaging.physiomeproject.org%2Fwelcome
 
 However, as implemented the restricted views are not necessarily readily
 available by those links, which PMR2 implements an alternative end point
