@@ -188,6 +188,17 @@ Following the commit, and if you are curious, you can see that the actual change
 
 and browsing your workspace in PMR should link the embedded workspace to the updated version of the Hinch model.
 
+Cloning a workspace containing embedded workspace(s)
+----------------------------------------------------
+
+In you workspace stored in PMR, embedded workspaces are simply stored as links to the actual source workspace - *not* the actual contents. Thus, if you simply :term:`clone` your workspace from PMR you will get that link and not the actual contents (which is usually what you really want). If you check the `Git book <https://git-scm.com/book/en/v2/Git-Tools-Submodules#Cloning-a-Project-with-Submodules>`_ you can see how to deal with this case in the general case. But for most purposes it is easiest to simply perform a recursive clone of your workspace. This can be done on the command line with the following.
+
+::
+
+   $ git clone --recursive [workspace url]
+   
+where ``[workspace url]``` should be replaced with your actual workspace URL (e.g., ``https://models.physiomeproject.org/workspace/NNNN``).
+
 Best practice
 =============
 
