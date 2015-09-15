@@ -54,10 +54,82 @@ A popular cardiac calcium dynamics model is that of `Hinch et al (2004) <http://
    :align: center
    :width: 80%
 
-   The Hinch *et al* (2004) exposure page in PMR, highlighting (a) the source workspace; and (b) the changeset identifier.
+   The Hinch *et al* (2004) exposure page in PMR, highlighting the **Source** section of the CellML exposure page. 
    
+From the **Source** section highlighted above, right-clicking on the workspace link should allow you to easily copy the source workspace URL. You can then navigate to your local :term:`clone` of your workspace you can embed the Hinch *et al* workspace as follows.
 
+::
 
+   $ git submodule add https://models.physiomeproject.org/workspace/hinch_greenstein_tanskanen_xu_winslow_2004
+   Cloning into 'hinch_greenstein_tanskanen_xu_winslow_2004'...
+   remote: dul-daemon says what
+   remote: counting objects: 29, done.
+   remote: how was that, then?
+   Unpacking objects: 100% (29/29), done.
+   Checking connectivity... done.
+
+By default the embedded workspace (Git submodule) will have the same name as the source workspace and be placed in the root of your workspace, but you can provide a different path to the above command if desired.
+
+When the embedded workspace is first created, it will be initialised to the latest version of the workspace, so we now need to :term:`checkout` the specific version of the embedded workspace that we are after (shown in the figure above). We can do this as shown below.
+
+::
+
+   $ cd hinch_greenstein_tanskanen_xu_winslow_2004
+   $ git checkout a1dd1cd2d20a
+   Note: checking out 'a1dd1cd2d20a'.
+   
+   You are in 'detached HEAD' state. You can look around, make experimental
+   changes and commit them, and you can discard any commits you make in this
+   state without impacting any branches by performing another checkout.
+   
+   If you want to create a new branch to retain commits you create, you may
+   do so (now or later) by using -b with the checkout command again. Example:
+   
+     git checkout -b new_branch_name
+   
+   HEAD is now at a1dd1cd... Tidied session file
+
+We now have the Hinch *et al* workspace embedded and set the desired version. If we traverse back to our workspace root and check the status of the workspace::
+
+   $ cd ..
+   $ git status
+   On branch master
+   
+   Initial commit
+   
+   Changes to be committed:
+     (use "git rm --cached <file>..." to unstage)
+   
+      new file:   .gitmodules
+      new file:   hinch_greenstein_tanskanen_xu_winslow_2004
+   
+   Changes not staged for commit:
+     (use "git add <file>..." to update what will be committed)
+     (use "git checkout -- <file>..." to discard changes in working directory)
+   
+      modified:   hinch_greenstein_tanskanen_xu_winslow_2004 (new commits)
+   
+we can see that the submodule has been added but that is has also been modified (due to changing from the latest revision to that specified in the exposure page). So as per standard Git usage, we add the change and then can commit the newly embedded workspace and push the changes in our workspace back to the repository.
+
+::
+
+   $ git commit -m "Embedding Hinch et al (2004) model from exposure https://models.physiomeproject.org/exposure/8e1a590fb82a2cab5284502b430c4a4f."
+   [master (root-commit) 563de87] Embedding Hinch et al (2004) model from exposure https://models.physiomeproject.org/exposure/8e1a590fb82a2cab5284502b430c4a4f.
+    2 files changed, 4 insertions(+)
+    create mode 100644 .gitmodules
+    create mode 160000 hinch_greenstein_tanskanen_xu_winslow_2004
+   $ git push
+   Counting objects: 3, done.
+   Delta compression using up to 4 threads.
+   Compressing objects: 100% (3/3), done.
+   Writing objects: 100% (3/3), 489 bytes | 0 bytes/s, done.
+   Total 3 (delta 0), reused 0 (delta 0)
+   To http://teaching.physiomeproject.org/workspace/273
+
+We can now confirm that we have the correct version of the Hinch *et al* model embedded by using our browser to navigate to our workspace in the repository (here we use the :term:`teaching instance`). You should now see the embedded workspace listed in the view of your workspace, and clicking on the embedded workspace should take you directly to the source workspace at the correct revision, namely: https://models.physiomeproject.org/workspace/hinch_greenstein_tanskanen_xu_winslow_2004/file/a1dd1cd2d20a4f1d00c69ce6cd1b968ea0836659/.
+
+.. note::
+   :term:`PMR2` does some clever redirects to resolve the embedded workspaces, so the acutal link displayed for the Hinch *et al* workspace in your workspace will not directly point to the source workspace and revision.
 
 Best practice
 =============
