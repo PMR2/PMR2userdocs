@@ -39,6 +39,9 @@ Glossary
    Mercurial
       `Mercurial <http://mercurial.selenic.com/>`_ is a distributed version control system previously used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`. See a tour of the `Mercurial basics`_ for some good introductory material.
 
+   PMR
+      An instance of :term:`PMR2` known as the Physiome Model Repository. The official URL of PMR is https://models.physiomeproject.org. A :term:`teaching instance` is also available for testing and teaching purposes.
+      
    PMR2
       The software that powers the Auckland Physiome Repository.
 
@@ -52,3 +55,6 @@ Glossary
 
    Python
       Python is a programming language that lets you work more quickly and integrate your systems more effectively. See `<http://python.org>`_ for all the details.
+
+   Teaching instance
+      An instance of :term:`PMR2` that allows users to explore and test the functionality of PMR2 without making permanent :term:`workspaces` or :term:`exposures`. The teaching instance is regularly cleared of content and re-populated from :term:`PMR`. It is also used for testing the latest PMR2 features prior to their deployment on PMR, so the user interface may not always exactly match that of PMR.
