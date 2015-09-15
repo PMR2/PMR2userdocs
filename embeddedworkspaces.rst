@@ -41,7 +41,7 @@ clear provenance record of the entire dataset in the workspace.
 Uses
 ====
 
-The `Git submodules <https://git-scm.com/book/en/v2/Git-Tools-Submodules>`_ documentation provides detailed information on the use of Git submodules, and the documentation of the `git-submodule <http://git-scm.com/docs/git-submodule>`_ command is also a useful resource.
+The `Git submodules <https://git-scm.com/book/en/v2/Git-Tools-Submodules>`_ documentation provides detailed information on the use of Git submodules, and the documentation of the `git-submodule <http://git-scm.com/docs/git-submodule>`_ command is also a useful resource. Here we provide some typical examples demonstrating the use of embedded workspaces with PMR. 
 
 Making use of a fixed version of a CellML model
 -----------------------------------------------
@@ -130,6 +130,63 @@ We can now confirm that we have the correct version of the Hinch *et al* model e
 
 .. note::
    :term:`PMR2` does some clever redirects to resolve the embedded workspaces, so the acutal link displayed for the Hinch *et al* workspace in your workspace will not directly point to the source workspace and revision.
+
+Updating to a newer revision
+----------------------------
+
+Once you have created an embedded workspace, it can be used as an independent Git repository within your workspace - you can make changes, commit them, and, if you have permission, push the changes back to the original source workspace. In the example described above, we embedded the Hinch *et al* (2004) calcium model into our workspace. We specifically embedded the revision of the workspace which matched a given exposure in PMR. If we look at the history of the source workspace, we can see that the Hinch workspace has progressed since that exposure was made. 
+
+Upon examining the changes in the workspace, we decide in this example that it would be beneficial to our work to update our embedded version to match the latest changes in the source Hinch workspace. This can be accomplished as follows.
+
+The first step is to update our embedded workspace to the latest revision.
+
+::
+
+   $ cd hinch_greenstein_tanskanen_xu_winslow_2004/
+   $ git checkout master
+   Previous HEAD position was a1dd1cd... Tidied session file
+   Switched to branch 'master'
+   Your branch is up-to-date with 'origin/master'.
+   $ git pull
+   Already up-to-date.
+
+(The final `git pull` is simply to confirm there have been no further changes.)
+
+We can now see that in our own workspace that the embedded workspace has changed::
+
+   $ cd ..
+   $ git status
+   On branch master
+   Your branch is up-to-date with 'origin/master'.
+   Changes not staged for commit:
+     (use "git add <file>..." to update what will be committed)
+     (use "git checkout -- <file>..." to discard changes in working directory)
+   
+      modified:   hinch_greenstein_tanskanen_xu_winslow_2004 (new commits)
+   
+   no changes added to commit (use "git add" and/or "git commit -a")
+   
+Committing that change will then update the embedded workspace to the latest revision::
+
+   $ git add hinch_greenstein_tanskanen_xu_winslow_2004
+   $ git commit -m "updating embedded version of the Hinch calcium model to the latest revision."
+   [master 1b74217] updating embedded version of the Hinch calcium model to the latest revision.
+    1 file changed, 1 insertion(+), 1 deletion(-)
+   $ git push
+   Counting objects: 2, done.
+   Delta compression using up to 4 threads.
+   Compressing objects: 100% (2/2), done.
+   Writing objects: 100% (2/2), 294 bytes | 0 bytes/s, done.
+   Total 2 (delta 1), reused 0 (delta 0)
+   To http://teaching.physiomeproject.org/workspace/273
+      563de87..1b74217  master -> master
+
+Following the commit, and if you are curious, you can see that the actual changeset committed is an update of the revision ID of the embedded workspace::
+
+   -Subproject commit a1dd1cd2d20a4f1d00c69ce6cd1b968ea0836659
+   +Subproject commit a55b3f2eb14e937a816b3f975722e44d1d3915bd
+
+and browsing your workspace in PMR should link the embedded workspace to the updated version of the Hinch model.
 
 Best practice
 =============
