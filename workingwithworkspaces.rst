@@ -9,8 +9,8 @@ Working with workspaces
 .. _teaching instance: http://teaching.physiomeproject.org/
 
 All models in the Auckland Physiome Repository exist in
-:term:`workspaces`, which are :term:`Mercurial` repositories that can be
-used to store any kind of file. Mercurial is a distributed version
+:term:`workspaces`, which are :term:`Git` repositories that can be
+used to store any kind of file. Git is a distributed version
 control system (DVCS).
 
 In order to create your own workspaces, you will first need to create a
@@ -49,7 +49,7 @@ workspace, shown below:
 .. figure:: images/add-workspace-dashboard.png
    :align: center
 
-Currently :term:`Mercurial` is the only avialable option for the storage
+Currently :term:`Git` is the only avialable option for the storage
 method for a new workspace, but this may be expanded to include other
 storage methods in future.  A workspace should be given a meaningful
 title and a brief description to help locate the workspace using the
@@ -64,17 +64,17 @@ which will initially be empty, as shown below:
 
 In the figure above, the URI of the newly created workspace has been
 highlighted. This is the URI that will be used when operating on the
-workspace using Mercurial.
+workspace using Git.
 
 .. _sharingWorkspaces:
 
 Working with collaborators
 ==========================
 
-The repository makes use of :term:`Mercurial` to manage individual
-workspaces.  Mercurial is a Distributed Version Control System (DVCS),
+The repository makes use of :term:`Git` to manage individual
+workspaces.  Git is a Distributed Version Control System (DVCS),
 and as such encourages collaborative development of your model, dataset,
-results, *etc*. Using Mercurial, each member of the development team is
+results, *etc*. Using Git, each member of the development team is
 able to have their own clone of the workspace which can be kept
 synchronized with the other members of the development team, while
 ensuring that each team member's contributions are accurately recorded
@@ -84,7 +84,7 @@ Once a :term:`workspace` has been published, any registered users (or
 members) of the repository is able to access and clone the workspace,
 including team members and the anonymous public. Only the owner and
 those with privileges granted by the owner are able to make changes to
-the workspace, including :term:`pushing` changes into the Mercurial
+the workspace, including :term:`pushing` changes into the Git
 repository.  Private workspaces, however, can only be viewed by its
 owner and those with viewing privileges granted by its owner.
 
@@ -123,16 +123,16 @@ permissions relate to the object that represents the workspace in the
 website database and are generally left in the default state. When
 selected for a given member, the **Can view** permission allows that
 member to view the workspace on the website, even if the workspace is
-private. Similarly, when the **Can hg push** permission is enabled the
+private. Similarly, when the **Can push** permission is enabled the
 selected member is able to :term:`push` into the workspace - this is the
 most important permission as enabling this allows members to add,
 modify, and delete the actual content of the workspace. One benefit of
-using Mercurial means that even if one of the privileged members
+using Git means that even if one of the privileged members
 accidentally modifies the workspace in a detrimental manner, it is
 possible to revert the workspace back to the correct state.
 
 When working in a collaborative team you would generally enable the
-**Can hg push** and **Can view** permissions for all team members and
+**Can push** and **Can view** permissions for all team members and
 only enable the **Can add** and **Can edit** permissions for the team
 members responsible for the workspace presentation in the website.
 
@@ -153,7 +153,7 @@ the following steps:
 
 #. :term:`Clone` the workspace to your local machine.
 #. Add files to cloned workspace.
-#. Commit the files using a :term:`Mercurial` client.
+#. Commit the files using a :term:`Git` client.
 #. :term:`Push` the workspace back to the repository.
 
 An example demonstrating these steps can be found in in this tutorial
@@ -161,3 +161,30 @@ step: `Populate with content`_, or continue on to the :ref:`next section of
 this guide <tut1cloningworkspace>`.
 
 .. _Populate with content: http://abibook2.readthedocs.org/en/latest/tutorials/embc13/scenario1/opencor/#embc13-opencor-addingcontent
+
+Troubleshoot
+============
+
+If during a ``git push`` something like this happened::
+
+    $ git push http://models.example.com/workspace/test
+    Counting objects: 101, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (101/101), done.
+    error: RPC failed; result=55, HTTP code = 0
+    fatal: The remote end hung up unexpectedly
+    Writing objects: 100% (101/101), 1.42 MiB | 0 bytes/s, done.
+    Total 101 (delta 59), reused 0 (delta 0)
+    fatal: The remote end hung up unexpectedly
+    Everything up-to-date
+
+This is caused by an insufficiently large ``http.postBuffer`` in your
+git configuration.  Either add this section to the ``.gitconfig`` file::
+
+    [http]
+        postBuffer = 524288000
+
+Or issue this command::
+
+    git config --global http.postBuffer 524288000
+

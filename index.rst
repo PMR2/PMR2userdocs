@@ -25,6 +25,7 @@ If you wish to deploy an instance of the repository software,
    exposing-fieldml
    embeddedworkspaces
    cellmlcuration
+   webservice
    glossary
 
 .. toctree::
