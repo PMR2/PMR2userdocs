@@ -163,6 +163,8 @@ link in the navigation bar, My Workspaces. This is where all the
 workspaces you create later on will be listed. The Log in link is also
 replaced by your username and a Log out link.
 
+.. _gitUserNameConf:
+
 Git username configuration
 --------------------------
 
@@ -282,6 +284,8 @@ Save the file. If you are using TortoiseGit, you will notice that the
 icon overlay has changed to a red exclamation mark. This indicates that
 the file now has uncommitted changes.
 
+.. _tut1CommitChanges:
+
 Committing changes
 ------------------
 
@@ -303,6 +307,8 @@ changes to the file have been committed.
 **Command line equivalent** ::
 
    git commit -m "Removed the paragraph about validation errors from the documentation"
+
+.. _tut1PushingChanges:
 
 Pushing changes to the repository
 ---------------------------------
@@ -329,6 +335,8 @@ commit messages you entered for each commit, as shown below:
 
 .. figure:: images/tut1-newhistoryentry.png
    :align: center
+
+.. _tut1CreateExposure:
 
 Create an exposure
 ==================

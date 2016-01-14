@@ -16,6 +16,7 @@ If you wish to deploy an instance of the repository software,
 .. toctree::
    :maxdepth: 1
 
+   quickstart
    introduction
    downloading-viewing
    workingwithworkspaces
