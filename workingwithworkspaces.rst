@@ -29,6 +29,8 @@ data there in the process, but users may register for an account just on
 the `teaching instance`_ if they prefer.  Such accounts will need to be
 recreated each time the teaching instance is overwritten.
 
+.. _teachingInstanceFirstMention:
+
 .. include:: teaching-instance-warning.rst
 
 .. _creatingNewWorkspace:
