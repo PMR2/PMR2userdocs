@@ -1,6 +1,6 @@
 .. note::
    The teaching instance of the repository is a mirror of the main
-   repository site found at `<http://models.physiomeproject.org/>`_,
+   repository site found at `<http://teaching.physiomeproject.org/>`_,
    running the latest development version of :term:`PMR2`.
 
    Any changes you make to the contents of the teaching instance are not
