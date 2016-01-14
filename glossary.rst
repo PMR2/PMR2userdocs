@@ -10,6 +10,10 @@ Glossary
 .. glossary::
    :sorted:
 
+
+   Checkout
+      Switch branches or restore working tree files.
+      
    Clone
       The term used with distributed version control systems (DVCS) to describe the process for making complete copy of another repository, usually hosted at a different site. This is done in order to have a local copy of a repository to work in.
 

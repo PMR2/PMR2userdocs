@@ -6,6 +6,9 @@ Embedded workspaces and their uses
 
 .. sectionauthor:: `David Nickerson <http://about.me/david.nickerson>`_
 
+.. warning::
+   This section is a work in progress, please `send us <https://models.physiomeproject.org/about/contact>`_ any questions, comments, or issues.
+
 .. todo::
    This section needs more work. Need to add documentation on how to do the examples using a GUI client like TortoiseGit.
 
