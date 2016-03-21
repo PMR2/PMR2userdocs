@@ -53,7 +53,7 @@ Creating standard CellML exposures
 In this example I will use a :term:`fork` of the the Beeler Reuter 1977
 workspace. Creating a *fork* of a workspace creates a *clone* of that
 workspace that you own, and can push changes to. You can *fork* any
-publicly available workspace in the AUckland Physiome Repository. For
+publicly available workspace in the Auckland Physiome Repository. For
 more information on this feature, refer to the information on features
 or collaboration, or see the :ref:`relevant section of the tutorial
 <tut1forkingaworkspace>`.
