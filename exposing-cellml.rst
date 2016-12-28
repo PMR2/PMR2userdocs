@@ -143,9 +143,12 @@ exposure if desired.
    :align: center
 
    Note that if your workspace is not publicly accessible, there will
-   be an informative note for this which you can safely ignore as there
-   are no process within the generation of the exposure that must
-   require a publicly accessible workspace.
+   be an informative note for this which you can safely ignore as this
+   warning was for a previous version of the CellML model loader that
+   required the workspace to be publicly accessible.  That said, if the
+   exposure became public with the workspace remaining as private, issue
+   will arise if visitors attempt to access the underlying workspace
+   data.
 
 The wizard shows a *subgroup* for each CellML file to be included in the
 exposure.  For each CellML file, select the following options:
@@ -164,8 +167,14 @@ exposure.  For each CellML file, select the following options:
      cases where the above option is unsuitable.
 - Source Viewer
    - Language Type - select xml
-- OpenCell Session Link
-   - Session File - select the session.xml if it has been created
+- SedML file
+   - The SedML file associated with the given CellML file; if specified,
+     the 'Launch with OpenCOR' link will open this file instead of the
+     CellML file.
+- Manifest path
+   - A COMBINE archive manifest file associated with the CellML file;
+     if specified, a COMBINE Archive download link will be enabled for
+     the exposure page for this CellML file.
 
 .. figure:: images/wizard3.png
    :align: center

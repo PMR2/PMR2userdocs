@@ -164,6 +164,17 @@ this guide <tut1cloningworkspace>`.
 
 .. _Populate with content: http://abibook2.readthedocs.org/en/latest/tutorials/embc13/scenario1/opencor/#embc13-opencor-addingcontent
 
+Other hints and tips
+====================
+
+- Avoid putting large binary data files into the workspace, as that will
+  slow down users who wish to clone the repository.  Especially archive
+  of the data that are already in the workspace - the repository offers
+  services to generate archive file download links.
+- Documentation should be written in either HTML or reStructuredText, as
+  these formats are currently supported by the repository for formatted
+  rendering.
+
 Troubleshoot
 ============
 
