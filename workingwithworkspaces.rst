@@ -138,7 +138,12 @@ When working in a collaborative team you would generally enable the
 only enable the **Can add** and **Can edit** permissions for the team
 members responsible for the workspace presentation in the website.
 
-Alternatively, if you wish to make your work available for searching by
+.. _publishingWorkspaces:
+
+Making your workspace public
+============================
+
+If you wish to make your work available for searching by
 any users, including the ones who do not have an account with the
 repository, you may do so by changing the workflow state from "private"
 to "submit for publication".  This will put your workspace into the
