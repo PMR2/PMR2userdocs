@@ -6,7 +6,7 @@ Working with workspaces
 
 .. sectionauthor:: David Nickerson
 
-.. _teaching instance: http://teaching.physiomeproject.org/
+.. _teaching instance: https://teaching.physiomeproject.org/
 
 All models in the Auckland Physiome Repository exist in
 :term:`workspaces`, which are :term:`Git` repositories that can be
@@ -196,13 +196,18 @@ If during a ``git push`` something like this happened::
     fatal: The remote end hung up unexpectedly
     Everything up-to-date
 
-This is caused by an insufficiently large ``http.postBuffer`` in your
-git configuration.  Either add this section to the ``.gitconfig`` file::
+This is caused by an insufficiently large ``http.postBuffer`` provided
+by the default Git configuration (1 MiB).  This needs to be in the
+``.gitconfig`` file::
 
     [http]
         postBuffer = 524288000
 
-Or issue this command::
+Issue this command to add it globally::
 
     git config --global http.postBuffer 524288000
 
+Alternatively, if `TortoiseGit <https://tortoisegit.org/>`_ is used, edit one
+of the relevant configuration files as per `documentation`_ on this.
+
+.. _documentations: https://tortoisegit.org/docs/tortoisegit/tgit-dug-settings.html#tgit-dug-settings-hierachical

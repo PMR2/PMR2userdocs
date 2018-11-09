@@ -26,7 +26,7 @@ Huxley, 1952 workspace`_.  If you need a quick reminder on how you might
 do this, please see :ref:`this section of the tutorial
 <tut1forkingaworkspace>`.
 
-.. _Hodgkin, Huxley, 1952 workspace: http://teaching.physiomeproject.org/workspace/hodgkin_huxley_1952
+.. _Hodgkin, Huxley, 1952 workspace: https://teaching.physiomeproject.org/workspace/hodgkin_huxley_1952
 
 Once you forked that workspace, you should now clone that workspace onto
 your system.  If you need help on this, please refer to :ref:`this help

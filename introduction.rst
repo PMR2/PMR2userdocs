@@ -18,14 +18,7 @@ notable one is the `Git Beginner's Guide for Dummies`_ as it has
 detailed guides on `installation procedures`_ for the major operating
 systems and the overall guide is quite excellent.
 
-Previously, the DVCS of choice was `Mercurial`_, but all workspaces
-have been converted to using Git as the backend.
-
 .. _Git: http://git-scm.com/
 .. _linked on the Git website: http://git-scm.com/documentation/external-links
 .. _Git Beginner's Guide for Dummies: http://backlogtool.com/git-guide/en/
 .. _installation procedures: http://backlogtool.com/git-guide/en/intro/intro2_1.html
-.. _Mercurial: http://mercurial.selenic.com/
-.. _Mercurial website: http://mercurial.selenic.com/
-.. _Mercurial, the definitive guide: http://hgbook.red-bean.com/read/
-.. _TortoiseHg: http://tortoisehg.bitbucket.org/

@@ -4,7 +4,6 @@
 Glossary
 ========
 
-.. _Mercurial basics: http://hgbook.red-bean.com/read/a-tour-of-mercurial-the-basics.html
 .. _Git Beginner's Guide: http://backlogtool.com/git-guide/en/
 
 .. glossary::
@@ -19,7 +18,7 @@ Glossary
 
    Embedded workspace
    Embedded workspaces
-      Essentially workspace or workspaces that are nested inside another one through mechanisms offered by distributed version control systems.  In :term:`Git` it will be through the use of Git submodules, in :term:`Mercurial` it will be through the use of Mercurial subrepos.
+      Essentially workspace or workspaces that are nested inside another one through mechanisms offered by distributed version control systems.  In :term:`Git` it will be through the use of Git submodules.
 
    Exposure
    Exposures
@@ -35,13 +34,10 @@ Glossary
 
    Workspace
    Workspaces
-      A `Git` repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Git`_.  Previously this was `Mercurial`.
+      A `Git` repository hosted on the Physiome Model Repository. This is essentially a folder or directory in which files are stored, with the added feature of being version controlled by the distributed version control system called `Git`_.
 
    Git
       `Git <http://git-scm.com/>`_ is a distributed version control system currently used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`. See a tour of the `Git Beginner's Guide`_ for some good introductory material.
-
-   Mercurial
-      `Mercurial <http://mercurial.selenic.com/>`_ is a distributed version control system previously used by the Physiome Model Repository software to maintain a history of changes to files in :term:`workspaces`. See a tour of the `Mercurial basics`_ for some good introductory material.
 
    PMR
       An instance of :term:`PMR2` known as the Physiome Model Repository. The official URL of PMR is https://models.physiomeproject.org. A :term:`teaching instance` is also available for testing and teaching purposes.

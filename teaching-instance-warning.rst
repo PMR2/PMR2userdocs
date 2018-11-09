@@ -1,6 +1,6 @@
 .. note::
    The teaching instance of the repository is a mirror of the main
-   repository site found at `<http://teaching.physiomeproject.org/>`_,
+   repository site found at `<https://teaching.physiomeproject.org/>`_,
    running the latest development version of :term:`PMR2`. User 
    accounts are periodicly synchronised from the main repository, but
    if you recently created an account on the main site you might need to

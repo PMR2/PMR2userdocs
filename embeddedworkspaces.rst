@@ -127,7 +127,7 @@ we can see that the submodule has been added but that is has also been modified 
    Compressing objects: 100% (3/3), done.
    Writing objects: 100% (3/3), 489 bytes | 0 bytes/s, done.
    Total 3 (delta 0), reused 0 (delta 0)
-   To http://teaching.physiomeproject.org/workspace/273
+   To https://teaching.physiomeproject.org/workspace/273
 
 We can now confirm that we have the correct version of the Hinch *et al* model embedded by using our browser to navigate to our workspace in the repository (here we use the :term:`teaching instance`). You should now see the embedded workspace listed in the view of your workspace, and clicking on the embedded workspace should take you directly to the source workspace at the correct revision, namely: https://models.physiomeproject.org/workspace/hinch_greenstein_tanskanen_xu_winslow_2004/file/a1dd1cd2d20a4f1d00c69ce6cd1b968ea0836659/.
 
@@ -181,7 +181,7 @@ Committing that change will then update the embedded workspace to the latest rev
    Compressing objects: 100% (2/2), done.
    Writing objects: 100% (2/2), 294 bytes | 0 bytes/s, done.
    Total 2 (delta 1), reused 0 (delta 0)
-   To http://teaching.physiomeproject.org/workspace/273
+   To https://teaching.physiomeproject.org/workspace/273
       563de87..1b74217  master -> master
 
 Following the commit, and if you are curious, you can see that the actual changeset committed is an update of the revision ID of the embedded workspace::
