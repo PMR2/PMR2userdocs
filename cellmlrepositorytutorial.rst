@@ -32,7 +32,7 @@ repositories.
 This tutorial requires you to have:
 
 - A `Git client <http://git-scm.com/downloads>`_.  Optionally, a GUI
-  client such as `TortoiseGit <http://code.google.com/p/tortoisegit/>`_.
+  client such as `TortoiseGit <https://tortoisegit.org/>`_.
 - The `OpenCell <http://www.cellml.org/tools/opencell>`_ CellML
   modelling environment.
 - A text editor such as `Notepad++ <http://notepad-plus-plus.org/>`_ or
@@ -237,7 +237,7 @@ Cloning your forked workspace
 -----------------------------
 
 In order to make changes to your workspace, you have to :term:`clone` it
-to your own computer. In order to do this, copy the URI for git
+to your own computer. In order to do this, copy the URI for Git
 clone/pull/push as shown below:
 
 .. figure:: images/tut1-cloneurl.png

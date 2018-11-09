@@ -197,7 +197,7 @@ If during a ``git push`` something like this happened::
     Everything up-to-date
 
 This is caused by an insufficiently large ``http.postBuffer`` provided
-by the default git configuration (1 MiB).  This needs to be in the
+by the default Git configuration (1 MiB).  This needs to be in the
 ``.gitconfig`` file::
 
     [http]
@@ -207,7 +207,7 @@ Issue this command to add it globally::
 
     git config --global http.postBuffer 524288000
 
-Alternatively, if TortoiseGit is used, edit one of the relevant
-configuration files as per `documentation`_ on this.
+Alternatively, if `TortoiseGit <https://tortoisegit.org/>`_ is used, edit one
+of the relevant configuration files as per `documentation`_ on this.
 
 .. _documentations: https://tortoisegit.org/docs/tortoisegit/tgit-dug-settings.html#tgit-dug-settings-hierachical
