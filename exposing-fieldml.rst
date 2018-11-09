@@ -14,7 +14,7 @@ views of the model data and or metadata. FieldML exposures also allow
 the real-time three-dimensional display of model meshes within the
 browser through the use of the `Zinc plugin`.
 
-.. _Auckland Physiome Repository: http://models.physiomeproject.org
+.. _Auckland Physiome Repository: https://models.physiomeproject.org
 .. _Zinc plugin: http://www.cmiss.org/cmgui/zinc
 
 The example screenshots below show the main documentation page view and
@@ -46,7 +46,7 @@ The following example RDF file from comes from the `Laminar Structure of
 the Heart workspace`_ in the repository:
 
 .. _Laminar Structure of the Heart workspace:
-   http://models.physiomeproject.org/workspace/heart
+   https://models.physiomeproject.org/workspace/heart
 
 .. code-block:: xml
    :linenos:

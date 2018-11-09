@@ -6,7 +6,7 @@ Working with workspaces
 
 .. sectionauthor:: David Nickerson
 
-.. _teaching instance: http://teaching.physiomeproject.org/
+.. _teaching instance: https://teaching.physiomeproject.org/
 
 All models in the Auckland Physiome Repository exist in
 :term:`workspaces`, which are :term:`Git` repositories that can be

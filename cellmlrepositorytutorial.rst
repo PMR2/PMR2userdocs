@@ -6,7 +6,7 @@ Tutorial on using CellML with Auckland Physiome Repository
 
 .. sectionauthor:: David Nickerson, Randall Britten, Dougal Cowan
 
-.. _teaching instance: http://teaching.physiomeproject.org
+.. _teaching instance: https://teaching.physiomeproject.org
 
 About this tutorial
 ===================
@@ -139,7 +139,7 @@ Registering an account and logging in
 -------------------------------------
 
 First, navigate to the `teaching instance`_ of the Auckland Physiome
-Repository at `<http://teaching.physiomeproject.org/>`_.
+Repository at `<https://teaching.physiomeproject.org/>`_.
 
 .. include:: teaching-instance-warning.rst
 
@@ -220,7 +220,7 @@ Forking a workspace can be done using the Physiome Model Repository web
 interface. The first step is to find the workspace you wish to fork. We
 will use the Beeler, Reuter 1977 :term:`workspace` which can be found
 at:
-`<http://teaching.physiomeproject.org/workspace/beeler_reuter_1977>`_.
+`<https://teaching.physiomeproject.org/workspace/beeler_reuter_1977>`_.
 
 Now click on the :guilabel:`fork` option in the toolbar, as shown below.
 
@@ -389,7 +389,7 @@ Repository, you should follow these steps:
    :align: center
 
 4. Fill in the URI of your workspace on the source instance (*e.g.,*
-   `<http://teaching.physiomeproject.org/w/andre/cortassa-ECME-2006>`_)
+   `<https://teaching.physiomeproject.org/w/andre/cortassa-ECME-2006>`_)
 
 #. Click the :guilabel:`Synchronize` button.
 
