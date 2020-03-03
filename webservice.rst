@@ -34,12 +34,12 @@ and interpret Collection+JSON can be used to navigate the repository
 much like how an end-user might navigate the repository with their web
 browser.  One such example is through the `Collection\+JSON Browser`_
 with the root endpoint of the repository (however, the example link uses
-the URL to the welcome page as the browser does not support redirection
+the URL to the welcome page as this browser does not support redirection
 to that on its own).
 
 .. _Collection\+JSON: http://amundsen.com/media-types/collection/
 .. _Collection\+JSON Browser: http://collection-json-browser.herokuapp.com/
-  ?proxy&uri=http:%2F%2Fstaging.physiomeproject.org%2Fwelcome
+  ?proxy&uri=http:%2F%2Fmodels.physiomeproject.org%2Fwelcome
 
 However, as implemented the restricted views are not necessarily readily
 available by those links, which PMR2 implements an alternative end point
@@ -48,7 +48,7 @@ purpose but in the future it may be linked directly to the root end
 point of the repository.
 
 .. _PMR2 Dashboard: http://collection-json-browser.herokuapp.com/
-  ?proxy&uri=http:%2F%2Fstaging.physiomeproject.org%2Fpmr2-dashboard
+  ?proxy&uri=http:%2F%2Fmodels.physiomeproject.org%2Fpmr2-dashboard
 
 Authentication
 --------------
@@ -61,7 +61,7 @@ manually by the system administrators.  An example demo application
 the package `pmr2.client`_.
 
 .. _pmr2.client: https://github.com/PMR2/pmr2.client/
-.. _Oauth: http://tools.ietf.org/html/rfc5849
+.. _Oauth: https://tools.ietf.org/html/rfc5849
 
 Example
 -------
@@ -72,13 +72,13 @@ page of the official repository can be done like so, using ``curl`` with
 the follow location flag (``-L``)::
 
     $ curl -sL -H 'Accept: application/vnd.physiome.pmr2.json.1' \
-    >     https://staging.physiomeproject.org/ |python -m json.tool
+    >     https://models.physiomeproject.org/ |python -m json.tool
 
 The result of the above command should show something like so::
 
     {
         "collection": {
-            "href": "https://staging.physiomeproject.org/welcome/document_view",
+            "href": "https://models.physiomeproject.org/welcome/document_view",
             "items": [
                 {
                     "data": [
@@ -91,7 +91,7 @@ The result of the above command should show something like so::
             ],
             "links": [
                 {
-                    "href": "https://staging.physiomeproject.org/exposure",
+                    "href": "https://models.physiomeproject.org/exposure",
                     "prompt": "Main model listing",
                     "rel": "bookmark"
                 },
@@ -105,16 +105,16 @@ especially the ``links`` section, for the links with a ``bookmark``
 relationship.  For instance::
 
     $ curl -sL -H 'Accept: application/vnd.physiome.pmr2.json.1' \
-    >     https://staging.physiomeproject.org/exposure |python -m json.tool
+    >     https://models.physiomeproject.org/exposure |python -m json.tool
 
 Output may look something like::
 
     {
         "collection": {
-            "href": "https://staging.physiomeproject.org/exposure/listing/pmr1_folder_listing",
+            "href": "https://models.physiomeproject.org/exposure/listing/pmr1_folder_listing",
             "links": [
                 {
-                    "href": "https://staging.physiomeproject.org/e/105",
+                    "href": "https://models.physiomeproject.org/e/105",
                     "prompt": "\r\n      A Quantitative Model of Human Jejunal Smooth Muscle Cell Electrophysiology\r\n    ",
                     "rel": "bookmark"
                 },
@@ -126,18 +126,18 @@ Output may look something like::
 An exposure may look like so::
 
     $ curl -sL -H 'Accept: application/vnd.physiome.pmr2.json.1' \
-    >     https://staging.physiomeproject.org/e/c1 |python -m json.tool
+    >     https://models.physiomeproject.org/e/c1 |python -m json.tool
     {
         "collection": {
-            "href": "https://staging.physiomeproject.org/e/c1/exposure_info",
+            "href": "https://models.physiomeproject.org/e/c1/exposure_info",
             "links": [
                 {
-                    "href": "https://staging.physiomeproject.org/e/c1/beeler_reuter_1977.cellml/view",
+                    "href": "https://models.physiomeproject.org/e/c1/beeler_reuter_1977.cellml/view",
                     "prompt": "Reconstruction of the action potential of ventricular myocardial fibres",
                     "rel": "bookmark"
                 },
                 {
-                    "href": "https://staging.physiomeproject.org/workspace/beeler_reuter_1977",
+                    "href": "https://models.physiomeproject.org/workspace/beeler_reuter_1977",
                     "prompt": "Workspace URL",
                     "rel": "via"
                 }
@@ -159,13 +159,13 @@ corner as a search bar.  This function is also replicated by navigating
 directly to that link::
 
     $ curl -sL -H 'Accept: application/vnd.physiome.pmr2.json.1' \
-    >     https://staging.physiomeproject.org/search |python -m json.tool
+    >     https://models.physiomeproject.org/search |python -m json.tool
 
 The result will be a template that looks like this::
 
     {
         "collection": {
-            "href": "https://staging.physiomeproject.org/search",
+            "href": "https://models.physiomeproject.org/search",
             "template": [
                 {
                     "name": "SearchableText",
@@ -214,7 +214,7 @@ The result will be a template that looks like this::
 Submission is done using the Collection+JSON format also.  For example::
 
     $ curl -sL -H 'Accept: application/vnd.physiome.pmr2.json.1' \
-    >     https://staging.physiomeproject.org/search -d '{
+    >     https://models.physiomeproject.org/search -d '{
     >         "template": {"data": [
     >             {"name": "SearchableText", "value": "Beeler"}
     >         ]}
@@ -224,15 +224,15 @@ Results will be contained in the ``links`` section::
 
     {
         "collection": {
-            "href": "https://staging.physiomeproject.org/search",
+            "href": "https://models.physiomeproject.org/search",
             "links": [
                 {
-                    "href": "https://staging.physiomeproject.org/exposure/8123cbe00754b718a39fed5eb9bfb4a2/skouibine_trayanova_moore_1999.cellml/view",
+                    "href": "https://models.physiomeproject.org/exposure/8123cbe00754b718a39fed5eb9bfb4a2/skouibine_trayanova_moore_1999.cellml/view",
                     "prompt": "Anode/cathode make and break phenomena in a model of defibrillation",
                     "rel": "bookmark"
                 },
                 {
-                    "href": "https://staging.physiomeproject.org/w/miller/beeler_reuter_1977_uncertexample",
+                    "href": "https://models.physiomeproject.org/w/miller/beeler_reuter_1977_uncertexample",
                     "prompt": "Beeler, Reuter, 1977",
                     "rel": "bookmark"
                 },
@@ -246,8 +246,8 @@ is possible to make use of the other fields to further refine the
 results by using them, for example, to search for only workspaces with
 ``Beeler`` in its title::
 
-    $ curl -sL -H 'Aecept: application/vnd.physiome.pmr2.json.1' \
-    >     https://staging.physiomeproject.org/search -d '{
+    $ curl -sL -H 'Accept: application/vnd.physiome.pmr2.json.1' \
+    >     https://models.physiomeproject.org/search -d '{
     >         "template": {"data": [
     >             {"name": "Title", "value": "Beeler"},
     >             {"name": "portal_type", "value": "Workspace"}
@@ -258,20 +258,20 @@ Results sould look like so::
 
     {
         "collection": {
-            "href": "https://staging.physiomeproject.org/search",
+            "href": "https://models.physiomeproject.org/search",
             "links": [
                 {
-                    "href": "https://staging.physiomeproject.org/w/miller/beeler_reuter_1977_uncertexample",
+                    "href": "https://models.physiomeproject.org/w/miller/beeler_reuter_1977_uncertexample",
                     "prompt": "Beeler, Reuter, 1977",
                     "rel": "bookmark"
                 },
                 {
-                    "href": "https://staging.physiomeproject.org/w/tommy/my_beeler_model",
+                    "href": "https://models.physiomeproject.org/w/tommy/my_beeler_model",
                     "prompt": "My Beeler Model",
                     "rel": "bookmark"
                 },
                 {
-                    "href": "https://staging.physiomeproject.org/workspace/beeler_reuter_1977",
+                    "href": "https://models.physiomeproject.org/workspace/beeler_reuter_1977",
                     "prompt": "Beeler, Reuter, 1977",
                     "rel": "bookmark"
                 },
